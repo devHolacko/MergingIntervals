@@ -150,7 +150,7 @@ namespace MergingIntervalsProblem
 
                     if (values.Length > 0 && int.TryParse(values[1], out _))
                     {
-                        bool validData = TimeSpan.TryParse(values[0], out _) && int.TryParse(values[1], out _) && int.Parse(values[2], out _) && actionsList.Contains(values[3]);
+                        bool validData = TimeSpan.TryParse(values[0], out _) && int.TryParse(values[1], out _) && int.TryParse(values[2], out _) && actionsList.Contains(values[3]);
                         if (!validData)
                         {
                             mergedItems = new List<MergeItem>();
